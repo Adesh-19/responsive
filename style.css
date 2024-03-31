@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1vw;
+    font-weight: 500;
+    margin: 0 1vw;
+}
+
+.mid-nav{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.mid-nav h1{
+    font-size: 1.7vw;
+    font-family: cursive;
+    font-weight: 900;
+}
+
+.right-nav{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-nav button{
+    margin: 0 .8vw;
+    padding: .7vw 1vw;
+    border: none;
+    border-radius: 50px;
+    font-size: .9vw;
+}
+
+.register{
+    background-color: #000;
+    color: #fff;
+}
+
+.login{
+    background-color: #eaf4f4;
+}
+
+.menubutton{
+    display: none;
+}
+
+@media(max-width: 425px) {
+
+    nav{
+        height: 80px;
+    }
+
+    .left-nav{
+        display: none;
+    }
+
+    .right-nav{
+        display: none;
+    }
+
+    .mid-nav {
+        width: 70%;
+        height: 100%;
+        padding: 0 3vh;
+    }
+
+    .mid-nav h1 {
+        font-size: 2.5vh;
+    }
+
+    .menubutton {
+        display: block;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 3vh;
+    }
+
+    .menubutton i {
+        font-size: 2.5vh;
+    }
+
+
+    .dropdown {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown a {
+        font-size: 2.3vh;
+        margin: 2vh 3vh;
+    }
+}
+
+
